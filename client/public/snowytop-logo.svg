@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- Sun/sky circle -->
+  <circle cx="400" cy="180" r="150" fill="#F9A825"/>
+  
+  <!-- Horizontal white stripes on sun -->
+  <line x1="250" y1="130" x2="550" y2="130" stroke="white" stroke-width="8"/>
+  <line x1="250" y1="170" x2="550" y2="170" stroke="white" stroke-width="8"/>
+  <line x1="250" y1="210" x2="550" y2="210" stroke="white" stroke-width="8"/>
+  <line x1="250" y1="250" x2="550" y2="250" stroke="white" stroke-width="8"/>
+  
+  <!-- Grass and soil base -->
+  <path d="M250 300 C260 295, 270 300, 280 295 C290 290, 300 295, 310 290 C320 285, 330 290, 340 285 C350 280, 360 285, 370 280 C380 275, 390 280, 400 275 C410 270, 420 275, 430 270 C440 265, 450 270, 460 265 C470 260, 480 265, 490 260 C500 255, 510 260, 520 255 C530 250, 540 255, 550 250 L550 330 L250 330 Z" fill="black"/>
+  
+  <!-- Animal silhouettes -->
+  <!-- Zebra/horse -->
+  <path d="M300 265 L300 280 C300 290, 290 290, 290 285 L290 270 C290 265, 280 265, 280 270 L275 280 C275 285, 280 285, 280 280 L285 290 C285 295, 280 300, 275 300 L290 300 C295 300, 300 295, 300 290 L305 260 L300 265" fill="black"/>
+  
+  <!-- Gazelle/antelope -->
+  <path d="M320 245 L320 260 L325 270 L330 265 L330 250 L335 235 L330 245 L335 240 L335 270 L340 280 C345 280, 350 275, 350 270 L345 250 L340 265 L340 245" fill="black"/>
+  
+  <!-- Giraffe -->
+  <path d="M380 230 L380 270 L375 290 L385 290 L390 275 L390 265 C390 260, 395 260, 395 265 L400 270 L400 250 L405 220 L410 210 L415 220 L410 230 L410 260 L405 280 L415 280 L420 265 L420 230" fill="black"/>
+  
+  <!-- Buffalo/rhino -->
+  <path d="M450 265 L450 280 C450 290, 455 295, 460 295 L475 295 L480 285 L460 270 C455 265, 445 260, 440 270 L450 265 M440 270 L435 260 L430 265 L435 275 M460 270 L465 260 L470 265 L465 275" fill="black"/>
+
+  <!-- SNOWYTOP text -->
+  <text x="90" y="410" font-family="Arial, sans-serif" font-size="85" font-weight="bold" fill="black">SNOWYTOP</text>
+  
+  <!-- SAFARIS text -->
+  <text x="570" y="410" font-family="Arial, sans-serif" font-size="85" font-weight="bold" fill="black">SAFARIS</text>
+  
+  <!-- Horizontal lines below SNOWYTOP -->
+  <line x1="90" y1="430" x2="320" y2="430" stroke="black" stroke-width="4"/>
+  <line x1="90" y1="440" x2="320" y2="440" stroke="black" stroke-width="4"/>
+  <line x1="90" y1="450" x2="320" y2="450" stroke="black" stroke-width="4"/>
+  
+  <!-- Tagline -->
+  <text x="90" y="475" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="black">A NEW SKY A NEW LIFE</text>
+</svg>

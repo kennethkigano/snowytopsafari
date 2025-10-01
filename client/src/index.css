@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navy: 214 86% 14%;
+    --orange: 39 100% 50%;
+    --white: 0 0% 100%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    /* Smoother font rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium tracking-tight;
+  }
+}
+
+/* Custom Kenya-inspired styles */
+.bg-kenya-gradient {
+  background: linear-gradient(90deg, #052044 0%, #052044 70%, #ffa500 100%);
+}
+
+.bg-kenya-gradient-reverse {
+  background: linear-gradient(90deg, #ffa500 0%, #052044 100%);
+}
+
+.bg-safari-texture {
+  background-color: #f9f7f4;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23052044' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.text-brand-orange {
+  color: #ffa500;
+}
+
+.bg-brand-navy {
+  background-color: #052044;
+}
+
+.bg-brand-orange {
+  background-color: #ffa500;
+}
+
+.text-brand-navy {
+  color: #052044;
+}
+
+.border-brand-orange {
+  border-color: #ffa500;
+}
+
+.border-brand-navy {
+  border-color: #052044;
+}
+
+/* Modern button styles */
+.btn-kenya-primary {
+  @apply bg-brand-navy text-white hover:bg-opacity-90 shadow-md transition-all duration-300;
+}
+
+.btn-kenya-secondary {
+  @apply bg-brand-orange text-brand-navy hover:bg-opacity-90 shadow-md transition-all duration-300;
+}
+
+/* Modern card styling */
+.safari-card {
+  @apply bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-500;
+}
+
+/* Kenya-inspired hover effects */
+.kenya-hover-effect {
+  @apply transition-all duration-300;
+}
+
+.kenya-hover-effect:hover {
+  @apply shadow-lg transform -translate-y-1;
+}
+
+/* Modern animations */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 0.6s ease-out;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Image styling */
+.safari-image {
+  @apply object-cover w-full h-full rounded-lg transition-all duration-500;
+}
+
+.safari-image:hover {
+  @apply brightness-105 scale-105;
+}
+
+/* Glass morphism effect */
+.glass-effect {
+  @apply bg-white/70 backdrop-blur-md rounded-xl border border-white/20;
+}

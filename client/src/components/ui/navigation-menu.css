@@ -1,0 +1,138 @@
+@keyframes enterFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes enterFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes exitToRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+}
+
+@keyframes exitToLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-30deg) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg) scale(1);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    opacity: 1;
+    transform: rotateX(0deg) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: rotateX(-10deg) scale(0.95);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+[data-radix-navigation-menu-viewport] {
+  position: relative;
+  width: var(--radix-navigation-menu-viewport-width);
+  height: var(--radix-navigation-menu-viewport-height);
+}
+
+[data-radix-navigation-menu-viewport-item] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+[data-radix-navigation-menu-viewport-item][data-state="open"] {
+  animation: scaleIn 200ms ease;
+}
+
+[data-radix-navigation-menu-viewport-item][data-state="closed"] {
+  animation: scaleOut 200ms ease;
+}
+
+[data-radix-navigation-menu-content] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+[data-radix-navigation-menu-content][data-motion="from-start"] {
+  animation: enterFromLeft 250ms ease;
+}
+
+[data-radix-navigation-menu-content][data-motion="from-end"] {
+  animation: enterFromRight 250ms ease;
+}
+
+[data-radix-navigation-menu-content][data-motion="to-start"] {
+  animation: exitToLeft 250ms ease;
+}
+
+[data-radix-navigation-menu-content][data-motion="to-end"] {
+  animation: exitToRight 250ms ease;
+}
+
+[data-radix-navigation-menu-indicator] {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 10px;
+  top: 100%;
+  overflow: hidden;
+  transition: width, transform 250ms ease;
+}
