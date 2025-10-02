@@ -38,7 +38,7 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "kiki-snowytopsaf-16"
-          entrypoint: "dist/index.js"
+          entrypoint: "index.js"
           root: "dist"
           
           
